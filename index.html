@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="myfunction(event)">
+        <div>
+        <input id="name"placeholder="name"/><label id="nameError"></label>
+        <input id="lastname" placeholder="lastname"/><label id="lastNameError"></label>
+        </div>
+        <label for="city">Choose a city:</label>
+        <select id="city" name="city">
+            <option value="0">Please select the city</option>
+          <option value="1">Volvo</option>
+          <option value="2">Saab</option>
+          <option value="3">Fiat</option>
+          <option value="4">Audi</option>
+        </select><label id="cityError"></label>
+        <p>Please select your gender</p>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <label id="genderError"></label>
+            <input type="submit" id="submit"></input>
+    </form>
+   
+    <script src="./logic.js"></script>
+</body>
+</html>
